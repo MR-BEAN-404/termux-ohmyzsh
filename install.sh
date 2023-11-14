@@ -1,9 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
-termux-setup-storage
+termux-setup-storage -y
 
 apt update
 apt install -y git zsh
-git clone https://github.com/Cabbagec/termux-ohmyzsh.git "$HOME/termux-ohmyzsh" --depth 1
+git clone https://github.com/MR-DAVID-404/ZSH.git "$HOME/termux-ohmyzsh" --depth 1
 
 mv "$HOME/.termux" "$HOME/.termux.bak.$(date +%Y.%m.%d-%H:%M:%S)"
 cp -R "$HOME/termux-ohmyzsh/.termux" "$HOME/.termux"
